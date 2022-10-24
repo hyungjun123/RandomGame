@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <title>1~100 정수 맞추기</title>
+    <script>
+    
+        let answer = Math.floor(Math.random() * 100)+1;
+        function Game() {
+        for(i=0; i<3; i++) {
+        let input = +prompt("숫자를 입력해주세요.");
+        
+        if(answer>input) {
+        alert("down")
+        
+        }
+        
+
+        if(answer<input){
+        alert("up")
+        }
+        
+
+        if(answer==input){
+        return alert("축하합니다");
+        
+        }
+       
+    }
+    return alert("어이쿠 정답은" + answer + "입니다.");
+
+    }  
+    Game();  
+    </script>
+    
+    <style>
+    body {
+    background-color:aqua;    
+    }
+    </style>
+</head>
+<body>
+    
+</body>
+</html>
